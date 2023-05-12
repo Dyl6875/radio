@@ -4,4 +4,8 @@ radio.onReceivedNumber(function (receivedNumber) {
 radio.onReceivedString(function (receivedString) {
     basic.showString(receivedString)
 })
+radio.onReceivedValue(function (name, value) {
+    basic.showNumber(value)
+    basic.showString(name)
+})
 radio.setGroup(68)
